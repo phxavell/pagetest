@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
+using OxyPlot.WindowsForms;
+using System.Management; // Adicione esta referência
 
 namespace pagetest
 {
@@ -121,6 +123,13 @@ namespace pagetest
                 float filteredAverageDownload = CalculateFilteredAverage(_validDownloadValues);
                 lblAverageDownload.Text = $"{_averageDownload:F2} Mbps\n{filteredAverageDownload:F2} Mbps(Filter)";
                 _validDownloadValues.Clear(); // Limpa os valores após calcular a média
+
+                // Verificação do resultado do teste de download
+                if (_averageDownload < 90)
+                {
+                    MessageBox.Show("Teste Ethernet Reprovado Downstream", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             }
 
             // Lógica de teste de upload
@@ -139,6 +148,18 @@ namespace pagetest
                 float filteredAverageUpload = CalculateFilteredAverage(_validUploadValues);
                 lblAverageUpload.Text = $"{_averageUpload:F2} Mbps\n{filteredAverageUpload:F2} Mbps(Filter)";
                 _validUploadValues.Clear(); // Limpa os valores após calcular a média
+
+                // Verificação do resultado do teste de upload
+                if (_averageUpload < 4)
+                {
+                    MessageBox.Show("Teste Ethernet Reprovado Upstream", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Teste Ethernet Aprovado", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // Salva a imagem do gráfico
+                    SavePlotImage(Application.StartupPath);
+                }
             }
 
             // Limite de pontos no gráfico
@@ -211,6 +232,35 @@ namespace pagetest
         private void webView21_Click(object sender, EventArgs e)
         {
             // Lógica adicional ao clicar na WebView, se necessário
+        }
+
+        private void SavePlotImage(string directoryPath)
+        {
+            string serialNumber = GetSerialNumber();
+            string fileName = $"Network_test_serial_{serialNumber}_{DateTime.Now:yyyyMMdd_HHmmss}.png";
+            string fullPath = Path.Combine(directoryPath, fileName);
+
+            using (var stream = new FileStream(fullPath, FileMode.Create))
+            {
+                var pngExporter = new PngExporter { Width = 800, Height = 400 };
+                pngExporter.Export(_plotModel, stream);
+            }
+        }
+
+        private string GetSerialNumber()
+        {
+            string serialNumber = string.Empty;
+
+            using (var searcher = new ManagementObjectSearcher("SELECT SerialNumber FROM Win32_BIOS"))
+            {
+                foreach (var obj in searcher.Get())
+                {
+                    serialNumber = obj["SerialNumber"]?.ToString();
+                    break; // Pega o primeiro resultado
+                }
+            }
+
+            return serialNumber ?? "Unknown"; // Retorna "Unknown" se não conseguir encontrar
         }
     }
 }
