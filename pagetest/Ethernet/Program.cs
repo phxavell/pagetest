@@ -1,4 +1,4 @@
-namespace pagetest
+namespace pagetest.Ethernet
 {
     internal static class Program
     {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 200%; /* Aumenta a altura para permitir scroll */
+            overflow: hidden; /* Oculta a barra de rolagem */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #overlay {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-size: 48px;
+            text-align: center;
+        }
+
+        #countdown {
+            font-size: 48px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay">
+        <div id="message">Iniciando teste em <span id="countdown">2</span>s</div>
+    </div>
+
+    <script>
+        let countdown = 2;
+        const countdownElement = document.getElementById('countdown');
+        const interval = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            if (countdown <= 0) {
+                clearInterval(interval);
+                document.getElementById('message').style.display = 'none'; // Oculta a mensagem
+                window.location.href = "https://openspeedtest.com/?run"; // Redireciona o usuário
+                window.chrome.webview.postMessage('start-speed-test');
+            }
+        }, 1000);
+
+        // Função para realizar o scroll suave
+        function smoothScroll() {
+            window.scrollBy({
+                top: 100, // Rola para baixo em 1 pixel
+                behavior: 'smooth' // Comportamento suave
+            });
+        }
+
+        // Iniciar o scroll suave após um pequeno atraso
+        setTimeout(() => {
+            setInterval(smoothScroll, 2); // Realiza o scroll a cada 100ms
+        }, 200); // Espera 1 segundo antes de começar o scroll
+    </script>
+</body>
+</html>
