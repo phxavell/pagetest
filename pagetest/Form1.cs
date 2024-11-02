@@ -10,6 +10,8 @@ using OxyPlot.Axes;
 using OxyPlot.Series;
 using OxyPlot.WindowsForms;
 using System.Management; // Adicione esta referência
+using Microsoft.Web.WebView2.Core;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace pagetest
 {
@@ -70,8 +72,22 @@ namespace pagetest
             plotView.Model = _plotModel;
         }
 
+        private List<string> GetAllNetworkInterfaces()
+        {
+            var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+            var interfaceNames = new List<string>();
+
+            foreach (var ni in networkInterfaces)
+            {
+                interfaceNames.Add(ni.Name); // Adiciona o nome da interface à lista
+            }
+
+            return interfaceNames; // Retorna a lista de nomes de interfaces
+        }
+
         private void InitializeNetworkCounters()
         {
+            //   var allInterfaces = GetAllNetworkInterfaces(); Description = "Intel(R) Wi-Fi 6 AX201 160MHz" Realtek PCIe GbE Family Controller
             _downloadCounter = new PerformanceCounter("Network Interface", "Bytes Received/sec", "Realtek PCIe GbE Family Controller");
             _uploadCounter = new PerformanceCounter("Network Interface", "Bytes Sent/sec", "Realtek PCIe GbE Family Controller");
 
@@ -159,6 +175,8 @@ namespace pagetest
                     MessageBox.Show("Teste Ethernet Aprovado", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     // Salva a imagem do gráfico
                     SavePlotImage(Application.StartupPath);
+                    this.Hide();
+
                 }
             }
 
@@ -227,6 +245,32 @@ namespace pagetest
             await webView21.EnsureCoreWebView2Async(null);
             string filePath = Path.Combine(Application.StartupPath, "speedtest.html");
             webView21.Source = new Uri(filePath);
+            //           webView21.CoreWebView2.WebMessageReceived += WebView2_WebMessageReceived;
+            webView21.NavigationCompleted += WebView_NavigationCompleted;
+        }
+
+        private void WebView2_WebMessageReceived(object sender, Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs e)
+        {
+            var message = e.TryGetWebMessageAsString();
+
+            if (message == "start-speed-test")
+            {
+                webView21.Visible = true; // Oculta a WebView
+            }
+        }
+
+        private async void WebView_NavigationCompleted(object sender, CoreWebView2NavigationCompletedEventArgs e)
+        {
+            if (e.IsSuccess)
+            {
+                // Injeta JavaScript para fazer um leve scroll
+                string script = "window.scrollBy(0,270);"; // Scrolla 200 pixels para baixo
+                await webView21.CoreWebView2.ExecuteScriptAsync(script);
+            }
+            else
+            {
+                MessageBox.Show("Erro ao carregar a página.");
+            }
         }
 
         private void webView21_Click(object sender, EventArgs e)
@@ -261,6 +305,43 @@ namespace pagetest
             }
 
             return serialNumber ?? "Unknown"; // Retorna "Unknown" se não conseguir encontrar
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            webView21.Visible = true; // Oculta a WebView
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            webView21.Visible = false;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //    webView21.Visible = true; // Oculta a WebView
+            pictureBox1.Image = Properties.Resources.led_acesso_verde;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            //webView21.Visible = false;
+            pictureBox1.Image = Properties.Resources.led_apagado;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.led_vermelho;
         }
     }
 }
