@@ -15,7 +15,7 @@ using Microsoft.Web.WebView2.WinForms;
 
 namespace pagetest
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
         private PerformanceCounter _downloadCounter;
         private PerformanceCounter _uploadCounter;
@@ -36,7 +36,7 @@ namespace pagetest
         private float _averageDownload;
         private float _averageUpload;
 
-        public Form1()
+        public Main()
         {
             InitializeComponent();
             InitializeNetworkCounters();
