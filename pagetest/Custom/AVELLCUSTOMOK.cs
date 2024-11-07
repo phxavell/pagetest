@@ -52,7 +52,8 @@ namespace AVELLCUSTOM1
             relogio.Interval = 1000;
             int tempo = 3;
 
-            relogio.Tick += delegate {
+            relogio.Tick += delegate
+            {
                 tempo -= 1;
                 lblTime.Text = tempo.ToString();
                 if (tempo == 0)
@@ -75,9 +76,9 @@ namespace AVELLCUSTOM1
             {
                 CUSTOMOK = "OK";
 
-           //     TOUCHPAD.TOUCHPAD formTouchpad = new TOUCHPAD.TOUCHPAD();
+                //     TOUCHPAD.TOUCHPAD formTouchpad = new TOUCHPAD.TOUCHPAD();
                 this.Hide();
-          //      formTouchpad.ShowDialog();
+                //      formTouchpad.ShowDialog();
             }
         }
 
@@ -144,7 +145,7 @@ namespace AVELLCUSTOM1
                     //    Serial = SerialAvell,
                     //    TControl = DadosFirebase1
                     //};
-                 //   FirebaseResponse response = client.Update("WEB_CONSULTA_TESTE/" + SerialAvell, teste);
+                    //   FirebaseResponse response = client.Update("WEB_CONSULTA_TESTE/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     DadosFirebase1 = string.Empty;
                     break;
@@ -156,6 +157,11 @@ namespace AVELLCUSTOM1
                 lblFirebase.Text = "Firebase Off-Line";
                 lblFirebase.ForeColor = Color.Red;
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

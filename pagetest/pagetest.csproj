@@ -63,4 +63,16 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Audio\" />
+    <Folder Include="Lcd\" />
+    <Folder Include="Bluetooth\" />
+    <Folder Include="Hdmi\" />
+    <Folder Include="Auditor\" />
+    <Folder Include="Auditoria\" />
+    <Folder Include="Wifi\" />
+    <Folder Include="Webcam\" />
+    <Folder Include="Usb\" />
+  </ItemGroup>
+
 </Project>

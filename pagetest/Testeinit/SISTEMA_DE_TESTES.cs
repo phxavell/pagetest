@@ -70,7 +70,19 @@ namespace TESTE_MAQUINAS
         {
             try
             {
-                Process.Start(@"C:\TESTES_AVELL\.executaveisAux\hibernarOff.vbs");
+                string caminhoVbs = @"C:\TESTES_AVELL\.executaveisAux\hibernarOff.vbs";
+
+                if (File.Exists(caminhoVbs))
+                {
+                    Process process = new Process();
+                    process.StartInfo.FileName = "wscript";
+                    process.StartInfo.Arguments = caminhoVbs;
+                    process.Start();
+                }
+                else
+                {
+                    MessageBox.Show("Arquivo não encontrado: " + caminhoVbs);
+                }
             }
             catch (Exception ex) { MessageBox.Show("Caminho não encontrado: C:\\TESTES_AVELL\\.executaveisAux\\hibernarOff.vbs"); }
         }

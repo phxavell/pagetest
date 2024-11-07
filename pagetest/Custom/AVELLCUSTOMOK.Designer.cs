@@ -30,90 +30,96 @@ namespace AVELLCUSTOM1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AVELLCUSTOMOK));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.pictureBoxOK = new System.Windows.Forms.PictureBox();
-            this.lblConfirme = new System.Windows.Forms.Label();
-            this.lblFirebase = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOK)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            lblTime = new Label();
+            pictureBoxOK = new PictureBox();
+            lblConfirme = new Label();
+            lblFirebase = new Label();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxOK).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel1.Controls.Add(this.lblTime);
-            this.panel1.Controls.Add(this.pictureBoxOK);
-            this.panel1.Controls.Add(this.lblConfirme);
-            this.panel1.Location = new System.Drawing.Point(-1, 64);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 413);
-            this.panel1.TabIndex = 15;
+            panel1.BackColor = Color.ForestGreen;
+            panel1.Controls.Add(lblTime);
+            panel1.Controls.Add(pictureBoxOK);
+            panel1.Controls.Add(lblConfirme);
+            panel1.Location = new Point(-1, 74);
+            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(534, 477);
+            panel1.TabIndex = 15;
+            panel1.Paint += panel1_Paint;
             // 
             // lblTime
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTime.Location = new System.Drawing.Point(408, 285);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(21, 24);
-            this.lblTime.TabIndex = 15;
-            this.lblTime.Text = "3";
+            lblTime.AutoSize = true;
+            lblTime.BackColor = Color.Transparent;
+            lblTime.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.DarkBlue;
+            lblTime.Location = new Point(476, 329);
+            lblTime.Margin = new Padding(4, 0, 4, 0);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(21, 24);
+            lblTime.TabIndex = 15;
+            lblTime.Text = "3";
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.confirmarOK;
-            this.pictureBoxOK.Location = new System.Drawing.Point(122, 45);
-            this.pictureBoxOK.Name = "pictureBoxOK";
-            this.pictureBoxOK.Size = new System.Drawing.Size(218, 194);
-            this.pictureBoxOK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxOK.TabIndex = 13;
-            this.pictureBoxOK.TabStop = false;
+            pictureBoxOK.Image = pagetest.Properties.Resources.confirmarOK;
+            pictureBoxOK.Location = new Point(142, 52);
+            pictureBoxOK.Margin = new Padding(4, 3, 4, 3);
+            pictureBoxOK.Name = "pictureBoxOK";
+            pictureBoxOK.Size = new Size(254, 224);
+            pictureBoxOK.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxOK.TabIndex = 13;
+            pictureBoxOK.TabStop = false;
             // 
             // lblConfirme
             // 
-            this.lblConfirme.AutoSize = true;
-            this.lblConfirme.BackColor = System.Drawing.Color.Transparent;
-            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirme.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblConfirme.Location = new System.Drawing.Point(28, 285);
-            this.lblConfirme.Name = "lblConfirme";
-            this.lblConfirme.Size = new System.Drawing.Size(374, 24);
-            this.lblConfirme.TabIndex = 12;
-            this.lblConfirme.Text = "SEGUINDO PARA O PRÓXIMO TESTE";
+            lblConfirme.AutoSize = true;
+            lblConfirme.BackColor = Color.Transparent;
+            lblConfirme.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirme.ForeColor = Color.DarkBlue;
+            lblConfirme.Location = new Point(33, 329);
+            lblConfirme.Margin = new Padding(4, 0, 4, 0);
+            lblConfirme.Name = "lblConfirme";
+            lblConfirme.Size = new Size(374, 24);
+            lblConfirme.TabIndex = 12;
+            lblConfirme.Text = "SEGUINDO PARA O PRÓXIMO TESTE";
             // 
             // lblFirebase
             // 
-            this.lblFirebase.AutoSize = true;
-            this.lblFirebase.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirebase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirebase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblFirebase.Location = new System.Drawing.Point(12, 9);
-            this.lblFirebase.Name = "lblFirebase";
-            this.lblFirebase.Size = new System.Drawing.Size(14, 20);
-            this.lblFirebase.TabIndex = 37;
-            this.lblFirebase.Text = ".";
+            lblFirebase.AutoSize = true;
+            lblFirebase.BackColor = Color.Transparent;
+            lblFirebase.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblFirebase.ForeColor = Color.Gainsboro;
+            lblFirebase.Location = new Point(14, 10);
+            lblFirebase.Margin = new Padding(4, 0, 4, 0);
+            lblFirebase.Name = "lblFirebase";
+            lblFirebase.Size = new Size(14, 20);
+            lblFirebase.TabIndex = 37;
+            lblFirebase.Text = ".";
             // 
             // AVELLCUSTOMOK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 477);
-            this.Controls.Add(this.lblFirebase);
-            this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "AVELLCUSTOMOK";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TESTE AVELL CUSTOM OK!";
-            this.TopMost = true;
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOK)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(533, 550);
+            Controls.Add(lblFirebase);
+            Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "AVELLCUSTOMOK";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "TESTE AVELL CUSTOM OK!";
+            TopMost = true;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxOK).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
