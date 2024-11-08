@@ -76,9 +76,9 @@ namespace AVELLCUSTOM1
             {
                 CUSTOMOK = "OK";
 
-                //     TOUCHPAD.TOUCHPAD formTouchpad = new TOUCHPAD.TOUCHPAD();
+                TOUCHPAD.TOUCHPAD formTouchpad = new TOUCHPAD.TOUCHPAD();
                 this.Hide();
-                //      formTouchpad.ShowDialog();
+                formTouchpad.ShowDialog();
             }
         }
 

@@ -65,7 +65,8 @@ namespace TOUCHPAD
                 relogio.Interval = 1000;
                 int tempo = 3;
 
-                relogio.Tick += delegate {
+                relogio.Tick += delegate
+                {
                     tempo -= 1;
                     lblTime.Text = tempo.ToString();
                     if (tempo == 0)
@@ -79,9 +80,9 @@ namespace TOUCHPAD
 
                         TOUCHPAD1 = "OK";
 
-                        //USB.USB formUSB = new USB.USB();
+                        USB.USB formUSB = new USB.USB();
                         this.Hide();
-                        //  formUSB.ShowDialog();
+                        formUSB.ShowDialog();
                     }
                 };
                 relogio.Start();
@@ -162,6 +163,11 @@ namespace TOUCHPAD
                 lblFirebase.Text = "Firebase Off-Line";
                 lblFirebase.ForeColor = Color.Red;
             }
+        }
+
+        private void panelOK_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
