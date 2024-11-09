@@ -215,10 +215,15 @@ namespace ROBOTESTE
                 try
                 {
                     //Sincronizar data e hora antes de startar o burnin-teste
+                    string caminhoz = @"C:\TESTES_AVELL\burnin\bit.exe";
+                    Process process = new Process();
+                    process.StartInfo.FileName = caminhoz;
+                    process.StartInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                    process.Start();
                     setTime();
-                    var startInfo = new ProcessStartInfo(@"C:\TESTES_AVELL\burnin\bit.exe");
-                    startInfo.WindowStyle = ProcessWindowStyle.Maximized;
-                    Process.Start(startInfo);
+               //     var startInfo = new ProcessStartInfo(@"C:\TESTES_AVELL\burnin\bit.exe");
+               //     startInfo.WindowStyle = ProcessWindowStyle.Maximized;
+                //    Process.Start(startInfo);
                     TimeStart();
 
                 }

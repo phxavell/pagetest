@@ -124,8 +124,8 @@ namespace TESTE_MAQUINAS
                 try
                 {
                     InteracaoDrivers();
-                    Process InstalarDrivers = Process.Start(@"C:\TESTES_AVELL\.executaveisAux\Instalador.exe");
-                    InstalarDrivers.WaitForExit();
+                    //      Process InstalarDrivers = Process.Start(@"C:\TESTES_AVELL\.executaveisAux\Instalador.exe");
+                    //     InstalarDrivers.WaitForExit();
 
                     var dataHoraMinutoOK = DateTime.Now.ToString("dd-MM-yyyy-HH:mm:s:s");
                     const string Drivers = @"C:\TESTES_AVELL\log_drivers\DriverInst.log";
@@ -258,7 +258,7 @@ namespace TESTE_MAQUINAS
                     LeituraSerial();
                     TimeBateria1();
                     //Para enviar os dados de rastreio interno
-               //     StartFireBaseServices();
+                    //     StartFireBaseServices();
 
                     RoboTeste();
                 }
@@ -549,7 +549,7 @@ namespace TESTE_MAQUINAS
         public void RoboTeste()
         {
             //Inserido AvellWeb**********************************************
-      //      InsertAvellWeb();
+            //      InsertAvellWeb();
             //Inserido AvellWeb**********************************************
 
             if (BURNIN != "OK")
@@ -976,6 +976,16 @@ namespace TESTE_MAQUINAS
         }
 
         private void Sistema_Teste_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxIndividual_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAtualizacao_Click(object sender, EventArgs e)
         {
 
         }
