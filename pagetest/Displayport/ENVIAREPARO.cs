@@ -5,9 +5,9 @@ using System.Windows.Forms;
 using MaterialSkin;
 using System.Reflection.Emit;
 using System.IO;
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+//using FireSharp.Config;
+//using FireSharp.Interfaces;
+//using FireSharp.Response;
 
 
 namespace DISPLAYPORT
@@ -17,33 +17,33 @@ namespace DISPLAYPORT
         public ENVIAREPARO()
         {
             InitializeComponent();
-            StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
+          //  StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
             TimeStart1();
             Interacao();
             CriarLog_MySQLReparo();
         }
 
         //Firebase
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
-            AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
-            BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
-        };
-        IFirebaseClient client;
+        //IFirebaseConfig ifc = new FirebaseConfig()
+        //{
+        //    //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
+        //    AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
+        //    BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
+        //};
+        //IFirebaseClient client;
         private object res;
 
-        public void StartFireBaseServices()
-        {
-            try
-            {
-                client = new FireSharp.FirebaseClient(ifc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível inserir os dados");
-            }
-        }
+        //public void StartFireBaseServices()
+        //{
+        //    try
+        //    {
+        //        client = new FireSharp.FirebaseClient(ifc);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Não foi possível inserir os dados");
+        //    }
+        //}
         //Firebase
 
         public void Interacao()
@@ -56,7 +56,7 @@ namespace DISPLAYPORT
 
         public void TimeStart1()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 1;//1 minuto e 20
 
@@ -77,7 +77,7 @@ namespace DISPLAYPORT
 
         public void TimeStart2()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 1;//1 minuto e 20
 
@@ -124,12 +124,12 @@ namespace DISPLAYPORT
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String InfoDisplayPort = "DisplayPort Falha: " + dataHoraMinuto;
-                    var teste = new dpport1
-                    {
-                        Serial = SerialAvell,
-                        TDisplayPort = InfoDisplayPort
-                    };
-                    FirebaseResponse response = client.Update("TESTE_FUNCIONAL/" + SerialAvell, teste);
+                    //var teste = new dpport1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    TDisplayPort = InfoDisplayPort
+                    //};
+                    //FirebaseResponse response = client.Update("TESTE_FUNCIONAL/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     InfoDisplayPort = string.Empty;
                     break;
@@ -142,12 +142,12 @@ namespace DISPLAYPORT
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String InfoDisplayPort = "DisplayPort Falha: " + dataHoraMinuto;
-                    var teste = new dpport1
-                    {
-                        Serial = SerialAvell,
-                        TDisplayPort = InfoDisplayPort
-                    };
-                    FirebaseResponse response = client.Update("TESTE_FUNCFALHA/" + SerialAvell, teste);
+                    //var teste = new dpport1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    TDisplayPort = InfoDisplayPort
+                    //};
+                    //FirebaseResponse response = client.Update("TESTE_FUNCFALHA/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     InfoDisplayPort = string.Empty;
                     break;

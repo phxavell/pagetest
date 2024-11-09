@@ -7,9 +7,9 @@ using System.Management;
 using System.Reflection.Emit;
 //Referencia de Maniupular arquivos:
 //https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
+////using FireSharp.Response;
 using System.Drawing;
 
 namespace AUDITOR
@@ -19,30 +19,30 @@ namespace AUDITOR
         public CONFIRMAOK()
         {
             InitializeComponent();
-            StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
+           // StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
         }
 
         //Firebase
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
-            AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
-            BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
-        };
-        IFirebaseClient client;
+        //IFirebaseConfig ifc = new FirebaseConfig()
+        //{
+        //    //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
+        //    AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
+        //    BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
+        //};
+        //IFirebaseClient client;
         private object res;
 
-        public void StartFireBaseServices()
-        {
-            try
-            {
-                client = new FireSharp.FirebaseClient(ifc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível inserir os dados");
-            }
-        }
+        //public void StartFireBaseServices()
+        //{
+        //    try
+        //    {
+        //        client = new FireSharp.FirebaseClient(ifc);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Não foi possível inserir os dados");
+        //    }
+        //}
         //Firebase
 
         private void btnSim_Click(object sender, EventArgs e)
@@ -127,12 +127,12 @@ namespace AUDITOR
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String InfoAuditoria = "Testes Validados-OK: " + dataHoraMinuto;
-                    var teste = new Auditor1
-                    {
-                        Serial = SerialAvell,
-                        TAuditor = InfoAuditoria
-                    };
-                    FirebaseResponse response = client.Update("TESTE_FUNCIONAL/" + SerialAvell, teste);
+                    //var teste = new Auditor1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    TAuditor = InfoAuditoria
+                    //};
+                    //FirebaseResponse response = client.Update("TESTE_FUNCIONAL/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     InfoAuditoria = string.Empty;
                 }

@@ -2,8 +2,8 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 namespace DISPLAPORTC
 {
@@ -39,7 +39,7 @@ namespace DISPLAPORTC
 
         public void TimeStart1()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 35;
 
@@ -60,7 +60,7 @@ namespace DISPLAPORTC
 
         public void TimeStart2()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 25;
 

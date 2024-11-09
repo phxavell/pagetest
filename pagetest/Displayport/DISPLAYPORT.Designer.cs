@@ -41,7 +41,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DISPLAYPORT.Properties.Resources.imagemDisplayPort;
+            this.pictureBox2.Image = global::pagetest.Properties.Resources.imagemDisplayPort;
             this.pictureBox2.Location = new System.Drawing.Point(351, 178);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(317, 290);
@@ -51,7 +51,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DISPLAYPORT.Properties.Resources.avell_icone;
+            this.pictureBox1.Image = global::pagetest.Properties.Resources.avell_icone;
             this.pictureBox1.Location = new System.Drawing.Point(12, 75);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(189, 109);

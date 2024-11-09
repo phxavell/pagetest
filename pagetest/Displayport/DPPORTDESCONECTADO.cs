@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Management;
 using System.Windows.Forms;
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+//using FireSharp.Config;
+//using FireSharp.Interfaces;
+//using FireSharp.Response;
 
 namespace DISPLAYPORT
 {
@@ -17,32 +17,32 @@ namespace DISPLAYPORT
         public DPPORTDESCONECTADO()
         {
             InitializeComponent();
-            StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
+         //   StartFireBaseServices();//Base de Dados On-Line - Ativar ou Desativar Aqui!
             CriarLog_MySQLReteste();
             Verificador();
         }
 
         //Firebase
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
-            AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
-            BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
-        };
-        IFirebaseClient client;
+        //IFirebaseConfig ifc = new FirebaseConfig()
+        //{
+        //    //Utilizando RealTimeDatabase do TestesAvell - OK Atualizado
+        //    AuthSecret = "v3zyDmyUJC4sGsdGHHonCePdpxvaKLGu0IN8AAHb",
+        //    BasePath = "https://database-5c3ab-default-rtdb.firebaseio.com/"
+        //};
+        //IFirebaseClient client;
         private object res;
 
-        public void StartFireBaseServices()
-        {
-            try
-            {
-                client = new FireSharp.FirebaseClient(ifc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível inserir os dados");
-            }
-        }
+        //public void StartFireBaseServices()
+        //{
+        //    try
+        //    {
+        //        client = new FireSharp.FirebaseClient(ifc);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Não foi possível inserir os dados");
+        //    }
+        //}
         //Firebase
 
         public void Verificador()
@@ -112,13 +112,13 @@ namespace DISPLAYPORT
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String InfoDisplayPort = "DisplayPort Desconectado: " + dataHoraMinuto;
-                    var teste = new dpport1
-                    {
-                        Serial = SerialAvell,
-                        TDisplayPort = InfoDisplayPort
-                    };
-                    //Mundar para FUNC_FALHA
-                    FirebaseResponse response = client.Update("TESTE_FUNCFALHA/" + SerialAvell, teste);
+                    //var teste = new dpport1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    TDisplayPort = InfoDisplayPort
+                    //};
+                    ////Mundar para FUNC_FALHA
+                    //FirebaseResponse response = client.Update("TESTE_FUNCFALHA/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     InfoDisplayPort = string.Empty;
                     break;

@@ -3,8 +3,8 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+//using FireSharp.Config;
+//using FireSharp.Interfaces;
 
 namespace HDMI
 {
@@ -94,7 +94,7 @@ namespace HDMI
         public void TimeStart1()
         //Preciso adicionar este time para tirar o bug de abrir o form antes de finalizar o processo.
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 2;
 
@@ -119,7 +119,7 @@ namespace HDMI
         public void TimeStart2()
         {
             //Depois de parar o testes de ocilação, isso só server como jumper
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo =2;
 
@@ -140,7 +140,7 @@ namespace HDMI
         public void TimeStart3()
         {
             //Só para dar um delay de 3 segundos.
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;
 
@@ -160,7 +160,7 @@ namespace HDMI
 
         public void TimeStart4()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;
 

@@ -118,166 +118,250 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bakground_sistema31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TemperaturaB.ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TemperaturaB.ON.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avell_icone2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avell_icone2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reprovaBAD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reprovaBAD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakground_sistema2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="background-1200x800" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-1200x800.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="led acesso verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\led acesso verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="semEnergia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\semEnergia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AnimaControlCooler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AnimaControlCooler.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakground_sistema3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="custom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\custom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="burnin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\burnin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lcds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lcds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pendrive" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pendrive.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TemperaturaB.ON1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TemperaturaB.ON1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AvellRobo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AvellRobo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="led apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\led apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ativa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ativa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="semEnergia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\semEnergia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reprovaBAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reprovaBAD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aviso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aviso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reconhecimentoFacial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reconhecimentoFacial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="xxx-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\xxx-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ativa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ativa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakground_sistema11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakground_sistema21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b_on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avell_icone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avell_icone1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Control.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bakground_sistema1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bakground_sistema1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btnCustom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btnCustom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avell_icone3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avell_icone3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\webcam.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="robo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\robo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btnBurnin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnBurnin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TecladoLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TecladoLight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gifFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gifFinal.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="confirmarOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\confirmarOK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="led vermelho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\led vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bon_lite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bon_lite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avell_icone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avell_icone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bateria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bateria1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="avell_icone4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\avell_icone4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pendriveLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pendriveLimpar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="conectDPPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conectDPPORT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="burnin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\burnin2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background-1200x8001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background-1200x8001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FalhaCooler" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FalhaCooler.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="webcam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\webcam1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bateria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bateria.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="audio_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\audio_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bakground_sistema31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="autofalantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\autofalantes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bakground_sistema3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loopback" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loopback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b_on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wifiOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wifiOk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avell_icone4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avell_icone4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confirmarOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confirmarOK.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loopback_ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loopback_ok.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="micronone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\micronone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="led vermelho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\led vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avell_icone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avell_icone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BluetoothLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BluetoothLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bakground_sistema21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bakground_sistema11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autofalantes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autofalantes.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="semEnergia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\semEnergia1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avell_icone3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avell_icone3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagemDisplayPort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagemDisplayPort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="somDPPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\somDPPORT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mysqlbanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mysqlbanco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TemperaturaB.ON1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TemperaturaB.ON1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TemperaturaB.ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TemperaturaB.ON.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bon_lite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bon_lite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chaves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verificadorDispPort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\verificadorDispPort.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conectDPPORT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conectDPPORT1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TecladoLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TecladoLight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wifiFalha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wifiFalha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conectDPPORT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conectDPPORT2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="custom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\custom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bakground_sistema2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bakground_sistema1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bakground_sistema1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="somHDMI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\somHDMI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mysql" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mySql1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reprovaBAD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reprovaBAD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pendriveLimpar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pendriveLimpar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bateria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bateria1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burnin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\burnin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ativa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ativa1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisplayPortFalha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DisplayPortFalha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loopback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loopback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lcds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lcds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnCustom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnCustom.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="semEnergia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\semEnergia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webcam.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auditImg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\auditImg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-1200x8001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-1200x8001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Control.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="auditImg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\auditImg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robo2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aviso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aviso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background-1200x800" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background-1200x800.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xxx-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xxx-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="webcam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\webcam1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagemDPort1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagemDPort1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reprovaBAD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reprovaBAD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pendrive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pendrive.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avell_icone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avell_icone1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ativa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ativa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnimaControlCooler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AnimaControlCooler.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="avell_icone2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avell_icone2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WifiLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WifiLogo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DPortFalha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DPortFalha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AvellRobo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AvellRobo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ativarSistema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ativarSistema.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="led acesso verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\led acesso verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="limparDados" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\limparDados.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reconhecimentoFacial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reconhecimentoFacial.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FalhaCooler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FalhaCooler.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="testeAudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\testeAudio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audio_img" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\audio_img.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selecioneEstender" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selecioneEstender.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="led apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\led apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="micronone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\micronone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conectHDMI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conectHDMI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HdmiFalha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HdmiFalha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imagemHDMI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imagemHDMI.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="somHDMI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\somHDMI1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -15,8 +15,8 @@ using System.Management;
 //<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 using System.Reflection.Emit;
 using System.Security.Policy;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 using System.Drawing;
 
 namespace AUDITOR
@@ -105,7 +105,7 @@ namespace AUDITOR
         public void TimeStart1()
         //Gera Auditoria.html
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;// 3segundos
 
@@ -145,7 +145,7 @@ namespace AUDITOR
         public void TimeStart2()
         //Verifica quando o arquivo for gerado
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 2;// 2segundos
             relogio.Tick += delegate {
@@ -177,7 +177,7 @@ namespace AUDITOR
         public void TimeStart3()
         //Insere a correção do arquivo
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;// 5segundos
             relogio.Tick += delegate {

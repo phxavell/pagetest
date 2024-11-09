@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 namespace DISPLAYPORT
 {
@@ -31,7 +31,7 @@ namespace DISPLAYPORT
         {
             if (DISPLAYPORT1 != "TESTADO")//Somente se não tiver nenhum valor na variável
             {
-                Timer relogio = new Timer();
+                System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
                 int tempo = 15;
 

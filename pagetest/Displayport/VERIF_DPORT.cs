@@ -47,7 +47,7 @@ namespace DISPLAYPORT
         public void TimeStart1()
         {
             // Preciso adicionar este time para tirar o bug de abrir o form antes de finalizar o processo.
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;
 

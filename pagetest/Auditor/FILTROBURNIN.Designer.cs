@@ -91,7 +91,7 @@
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::AUDITOR.Properties.Resources.burnin;
+            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.burnin;
             this.pictureBoxOK.Location = new System.Drawing.Point(82, 44);
             this.pictureBoxOK.Name = "pictureBoxOK";
             this.pictureBoxOK.Size = new System.Drawing.Size(291, 203);

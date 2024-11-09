@@ -4,9 +4,9 @@ using System.IO;
 using System.Linq;
 using System.Management;
 using System.Windows.Forms;
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+//using FireSharp.Config;
+//using FireSharp.Interfaces;
+//using FireSharp.Response;
 
 namespace HDMI
 {
@@ -17,32 +17,32 @@ namespace HDMI
         public HDMIDESCONECTADO()
         {
             InitializeComponent();
-            StartFireBaseServices();
+      //      StartFireBaseServices();
             InsertAvellWeb();
             Verificador();
         }
 
         //Firebase
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            //Base de Dados da Avell, onde ficam os resultados
-            AuthSecret = "BVBQHkHsf2fV2lqrP2GhPLjxufBMdxPoxYYg9XKP",
-            BasePath = "https://avellweb-default-rtdb.firebaseio.com/"
-        };
-        IFirebaseClient client;
+        //IFirebaseConfig ifc = new FirebaseConfig()
+        //{
+        //    //Base de Dados da Avell, onde ficam os resultados
+        //    AuthSecret = "BVBQHkHsf2fV2lqrP2GhPLjxufBMdxPoxYYg9XKP",
+        //    BasePath = "https://avellweb-default-rtdb.firebaseio.com/"
+        //};
+        //IFirebaseClient client;
         private object res;
 
-        public void StartFireBaseServices()
-        {
-            try
-            {
-                client = new FireSharp.FirebaseClient(ifc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível inserir os dados");
-            }
-        }
+        //public void StartFireBaseServices()
+        //{
+        //    try
+        //    {
+        //        client = new FireSharp.FirebaseClient(ifc);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Não foi possível inserir os dados");
+        //    }
+        //}
         //Firebase
 
         public void Verificador()
@@ -113,12 +113,12 @@ namespace HDMI
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String DadosFirebase1 = "HDMI FALHA!:" + dataHoraMinuto;
-                    var teste = new hdmi1
-                    {
-                        Serial = SerialAvell,
-                        THdmi = DadosFirebase1
-                    };
-                    FirebaseResponse response = client.Update("WEB_CONSULTA_TESTEFALHA/" + SerialAvell, teste);
+                    //var teste = new hdmi1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    THdmi = DadosFirebase1
+                    //};
+                    //FirebaseResponse response = client.Update("WEB_CONSULTA_TESTEFALHA/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     DadosFirebase1 = string.Empty;
                     break;

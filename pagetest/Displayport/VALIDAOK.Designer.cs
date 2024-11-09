@@ -63,7 +63,7 @@
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::DISPLAYPORT.Properties.Resources.confirmarOK;
+            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.confirmarOK;
             this.pictureBoxOK.Location = new System.Drawing.Point(121, 45);
             this.pictureBoxOK.Name = "pictureBoxOK";
             this.pictureBoxOK.Size = new System.Drawing.Size(218, 194);

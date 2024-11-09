@@ -4,8 +4,8 @@ using MaterialSkin;
 using System.Diagnostics;
 using NAudio;
 using NAudio.CoreAudioApi;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 //Barra de Áudio
 //https://www.youtube.com/watch?v=TNpDD4ljIgY  -- Rerferência de código.
 

@@ -3,13 +3,13 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Windows.Forms;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 using InTheHand.Net.Bluetooth;
 using InTheHand.Net.Sockets;
 using System.Management;
 using System.IO;
-//using FireSharp.Response;
+////using FireSharp.Response;
 
 namespace BLUETOOTH
 {

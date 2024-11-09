@@ -78,7 +78,7 @@
             // 
             // pictureBoxEstender
             // 
-            this.pictureBoxEstender.Image = global::DISPLAPORTC.Properties.Resources.selecioneEstender;
+            this.pictureBoxEstender.Image = global::pagetest.Properties.Resources.selecioneEstender;
             this.pictureBoxEstender.Location = new System.Drawing.Point(47, 230);
             this.pictureBoxEstender.Name = "pictureBoxEstender";
             this.pictureBoxEstender.Size = new System.Drawing.Size(281, 329);
@@ -88,7 +88,7 @@
             // 
             // pictureBoxConectar
             // 
-            this.pictureBoxConectar.Image = global::DISPLAPORTC.Properties.Resources.conectDPPORT;
+            this.pictureBoxConectar.Image = global::pagetest.Properties.Resources.conectDPPORT;
             this.pictureBoxConectar.Location = new System.Drawing.Point(47, 119);
             this.pictureBoxConectar.Name = "pictureBoxConectar";
             this.pictureBoxConectar.Size = new System.Drawing.Size(281, 103);

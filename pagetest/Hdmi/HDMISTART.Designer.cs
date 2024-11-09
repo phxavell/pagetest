@@ -66,7 +66,7 @@ namespace HDMI
             // 
             // pictureBoxEstender
             // 
-            this.pictureBoxEstender.Image = global::HDMI.Properties.Resources.selecioneEstender;
+            this.pictureBoxEstender.Image = global::pagetest.Properties.Resources.selecioneEstender;
             this.pictureBoxEstender.Location = new System.Drawing.Point(43, 203);
             this.pictureBoxEstender.Name = "pictureBoxEstender";
             this.pictureBoxEstender.Size = new System.Drawing.Size(281, 329);
@@ -76,7 +76,7 @@ namespace HDMI
             // 
             // pictureBoxConectar
             // 
-            this.pictureBoxConectar.Image = global::HDMI.Properties.Resources.conectHDMI;
+            this.pictureBoxConectar.Image = global::pagetest.Properties.Resources.conectHDMI;
             this.pictureBoxConectar.Location = new System.Drawing.Point(43, 94);
             this.pictureBoxConectar.Name = "pictureBoxConectar";
             this.pictureBoxConectar.Size = new System.Drawing.Size(281, 103);

@@ -77,7 +77,7 @@ namespace HDMI
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Image = global::HDMI.Properties.Resources.avell_icone;
+            this.pictureBoxLogo.Image = global::pagetest.Properties.Resources.avell_icone;
             this.pictureBoxLogo.Location = new System.Drawing.Point(14, 73);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(189, 109);
@@ -87,7 +87,7 @@ namespace HDMI
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HDMI.Properties.Resources.somHDMI;
+            this.pictureBox2.Image = global::pagetest.Properties.Resources.somHDMI;
             this.pictureBox2.Location = new System.Drawing.Point(465, 307);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 161);

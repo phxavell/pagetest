@@ -5,9 +5,9 @@ using System.IO;
 using System.Management;
 using System.Windows.Forms;
 using System.Drawing;
-//using FireSharp.Response;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Response;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 namespace CONTROL_COOLER
 {

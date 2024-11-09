@@ -4,8 +4,8 @@ using MaterialSkin;
 using System.Media;
 using System.Runtime.InteropServices;
 using NAudio.CoreAudioApi;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 //Referencia para gravador de áudio
 //https://www.youtube.com/watch?v=ew4k6VAgqZk
 

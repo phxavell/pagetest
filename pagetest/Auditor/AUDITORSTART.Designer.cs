@@ -90,7 +90,7 @@ namespace AUDITOR
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::AUDITOR.Properties.Resources.auditImg21;
+            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.auditImg2;
             this.pictureBoxOK.Location = new System.Drawing.Point(13, 31);
             this.pictureBoxOK.Name = "pictureBoxOK";
             this.pictureBoxOK.Size = new System.Drawing.Size(433, 240);

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 using System.IO;
 
 namespace AUDITOR
@@ -40,7 +40,7 @@ namespace AUDITOR
         {
             if (AUDITOR != "STARTED")
             {
-                Timer relogio = new Timer();
+                System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
                 int tempo = 5;
                 relogio.Tick += delegate

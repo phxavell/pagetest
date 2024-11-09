@@ -39,7 +39,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BLUETOOTH.Properties.Resources.BluetoothLogo;
+            this.pictureBox1.Image = global::pagetest.Properties.Resources.BluetoothLogo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 84);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(120, 154);

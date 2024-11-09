@@ -44,7 +44,7 @@ namespace AUDITOR
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AUDITOR.Properties.Resources.avell_icone;
+            this.pictureBox1.Image = global::pagetest.Properties.Resources.avell_icone;
             this.pictureBox1.Location = new System.Drawing.Point(12, 76);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 106);

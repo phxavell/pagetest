@@ -4,8 +4,8 @@ using System.Threading;
 using System.Windows.Forms;
 using WMPLib;
 using MaterialSkin;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 namespace RGB
 {

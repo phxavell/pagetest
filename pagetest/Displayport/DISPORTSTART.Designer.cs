@@ -90,7 +90,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DISPLAYPORT.Properties.Resources.selecioneEstender;
+            this.pictureBox2.Image = global::pagetest.Properties.Resources.selecioneEstender;
             this.pictureBox2.Location = new System.Drawing.Point(47, 243);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(281, 308);
@@ -100,7 +100,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DISPLAYPORT.Properties.Resources.conectDPPORT;
+            this.pictureBox1.Image = global::pagetest.Properties.Resources.conectDPPORT;
             this.pictureBox1.Location = new System.Drawing.Point(47, 134);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 91);

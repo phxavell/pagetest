@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //Referencia do projeto: https://www.youtube.com/watch?v=u6cSth9S4HQ
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 namespace RGB
 {

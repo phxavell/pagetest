@@ -62,7 +62,7 @@
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::DISPLAPORTC.Properties.Resources.DPortFalha;
+            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.DPortFalha;
             this.pictureBoxOK.Location = new System.Drawing.Point(86, 35);
             this.pictureBoxOK.Name = "pictureBoxOK";
             this.pictureBoxOK.Size = new System.Drawing.Size(288, 192);

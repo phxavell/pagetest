@@ -76,7 +76,7 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Image = global::DISPLAPORTC.Properties.Resources.avell_icone;
+            this.pictureBoxLogo.Image = global::pagetest.Properties.Resources.avell_icone;
             this.pictureBoxLogo.Location = new System.Drawing.Point(13, 73);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(189, 109);
@@ -86,7 +86,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::DISPLAPORTC.Properties.Resources.somHDMI;
+            this.pictureBox2.Image = global::pagetest.Properties.Resources.somHDMI;
             this.pictureBox2.Location = new System.Drawing.Point(464, 307);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 161);

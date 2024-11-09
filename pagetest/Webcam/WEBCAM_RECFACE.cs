@@ -7,8 +7,8 @@ using AForge.Video;
 using AForge.Video.DirectShow;
 using System.IO;
 using System.Linq;
-//using FireSharp.Config;
-//using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 using System.Threading.Tasks;
 
 

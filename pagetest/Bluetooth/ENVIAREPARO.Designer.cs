@@ -39,7 +39,7 @@
             // 
             // pictureBoxLogo
             // 
-            this.pictureBoxLogo.Image = global::BLUETOOTH.Properties.Resources.avell_icone;
+            this.pictureBoxLogo.Image = global::pagetest.Properties.Resources.avell_icone;
             this.pictureBoxLogo.Location = new System.Drawing.Point(12, 72);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(189, 109);

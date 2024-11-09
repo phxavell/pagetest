@@ -3,8 +3,8 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
 
 //Adicionado para teste display port:
 using System.IO.Ports;
@@ -78,7 +78,7 @@ namespace DISPLAYPORT
 
         public void TimeStart1()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 2;
 
@@ -99,7 +99,7 @@ namespace DISPLAYPORT
 
         public void TimeStart2()
         {
-            Timer relogio = new Timer();
+            System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
             relogio.Interval = 1000;
             int tempo = 3;
 
@@ -128,7 +128,7 @@ namespace DISPLAYPORT
         {
             if (DISPLAYPORTOK != "FALHA")
             {
-                Timer relogio = new Timer();
+                System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
                 int tempo = 3;
 

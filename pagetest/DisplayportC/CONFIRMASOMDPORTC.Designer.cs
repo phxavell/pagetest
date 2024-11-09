@@ -89,7 +89,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DISPLAPORTC.Properties.Resources.conectDPPORT1;
+            this.pictureBox1.Image = global::pagetest.Properties.Resources.conectDPPORT1;
             this.pictureBox1.Location = new System.Drawing.Point(38, 109);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(361, 161);

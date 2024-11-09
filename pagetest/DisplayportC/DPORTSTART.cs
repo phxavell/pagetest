@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
 using MaterialSkin;
-using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+////using FireSharp.Config;
+////using FireSharp.Interfaces;
+////using FireSharp.Response;
 using System.Drawing;
 using System.Management;
 
@@ -16,7 +16,7 @@ namespace DISPLAPORTC
         public DPORTSTART()
         {
             InitializeComponent();
-            StartFireBaseServices();
+         //   StartFireBaseServices();
             Interacao();
             TimeStart();
         }
@@ -32,33 +32,33 @@ namespace DISPLAPORTC
         }
 
         //Firebase
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            //Base de Dados da Avell, onde ficam os resultados
-            AuthSecret = "BVBQHkHsf2fV2lqrP2GhPLjxufBMdxPoxYYg9XKP",
-            BasePath = "https://avellweb-default-rtdb.firebaseio.com/"
-        };
-        IFirebaseClient client;
+        //IFirebaseConfig ifc = new FirebaseConfig()
+        //{
+        //    //Base de Dados da Avell, onde ficam os resultados
+        //    AuthSecret = "BVBQHkHsf2fV2lqrP2GhPLjxufBMdxPoxYYg9XKP",
+        //    BasePath = "https://avellweb-default-rtdb.firebaseio.com/"
+        //};
+        //IFirebaseClient client;
         private object res;
 
-        public void StartFireBaseServices()
-        {
-            try
-            {
-                client = new FireSharp.FirebaseClient(ifc);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Não foi possível inserir os dados");
-            }
-        }
+        //public void StartFireBaseServices()
+        //{
+        //    try
+        //    {
+        //        client = new FireSharp.FirebaseClient(ifc);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Não foi possível inserir os dados");
+        //    }
+        //}
         //Firebase
 
         public void TimeStart()
         {
             if (DISPLAYPORTOK1 == null)//Somente se não tiver nenhum valor na variável
             {
-                Timer relogio = new Timer();
+                System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
                 int tempo = 15;
 
@@ -107,12 +107,12 @@ namespace DISPLAPORTC
                 {
                     string SerialAvell = getserial["SerialNumber"].ToString();
                     String DadosFirebase1 = "HDMI Início:" + dataHoraMinuto;
-                    var teste = new dport1
-                    {
-                        Serial = SerialAvell,
-                        TDisplayPortC = DadosFirebase1
-                    };
-                    FirebaseResponse response = client.Update("WEB_CONSULTA_TESTE/" + SerialAvell, teste);
+                    //var teste = new dport1
+                    //{
+                    //    Serial = SerialAvell,
+                    //    TDisplayPortC = DadosFirebase1
+                    //};
+                    //FirebaseResponse response = client.Update("WEB_CONSULTA_TESTE/" + SerialAvell, teste);
                     SerialAvell = string.Empty;
                     DadosFirebase1 = string.Empty;
                     break;

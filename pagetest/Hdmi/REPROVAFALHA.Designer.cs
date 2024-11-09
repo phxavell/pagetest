@@ -65,7 +65,7 @@ namespace HDMI
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::HDMI.Properties.Resources.reprovaBAD1;
+            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.reprovaBAD1;
             this.pictureBoxOK.Location = new System.Drawing.Point(125, 45);
             this.pictureBoxOK.Name = "pictureBoxOK";
             this.pictureBoxOK.Size = new System.Drawing.Size(218, 194);
