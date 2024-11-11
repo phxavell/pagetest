@@ -12,6 +12,7 @@ using OxyPlot.WindowsForms;
 using System.Management; // Adicione esta referência
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
+using TECLADO;
 
 namespace pagetest
 {
@@ -179,7 +180,10 @@ namespace pagetest
                     MessageBox.Show("Teste Ethernet Aprovado", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     // Salva a imagem do gráfico
                     SavePlotImage(Application.StartupPath);
+
+                    TECLADO.TESTETECLADO TESTE = new TECLADO.TESTETECLADO();
                     this.Hide();
+                    TESTE.ShowDialog();
 
                 }
             }

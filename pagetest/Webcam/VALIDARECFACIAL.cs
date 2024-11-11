@@ -62,7 +62,8 @@ namespace WEBCAM
                 System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
                 int tempo = 3;
-                relogio.Tick += delegate {
+                relogio.Tick += delegate
+                {
                     tempo -= 1;
                     lblTime.Text = tempo.ToString();
                     if (tempo == 0)
@@ -162,6 +163,11 @@ namespace WEBCAM
                 lblFirebase.Text = "Firebase Off-Line";
                 lblFirebase.ForeColor = Color.Red;
             }
+        }
+
+        private void panelOK_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

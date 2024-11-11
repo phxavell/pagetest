@@ -63,7 +63,8 @@ namespace TECLADO
             relogio.Interval = 1000;
             int tempo = 3;
 
-            relogio.Tick += delegate {
+            relogio.Tick += delegate
+            {
                 tempo -= 1;
                 lblTime.Text = tempo.ToString();
                 if (tempo == 0)
@@ -118,6 +119,11 @@ namespace TECLADO
                 Arquivo.Close();
             }
             catch (Exception ex) { }
+        }
+
+        private void panelOK_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         //public void InsertAvellWeb()

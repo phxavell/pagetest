@@ -30,74 +30,79 @@ namespace WEBCAM
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VALIDARECFACEOK));
-            this.panelOK = new System.Windows.Forms.Panel();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.pictureBoxOK = new System.Windows.Forms.PictureBox();
-            this.lblConfirme = new System.Windows.Forms.Label();
-            this.panelOK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOK)).BeginInit();
-            this.SuspendLayout();
+            panelOK = new Panel();
+            lblTime = new Label();
+            pictureBoxOK = new PictureBox();
+            lblConfirme = new Label();
+            panelOK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxOK).BeginInit();
+            SuspendLayout();
             // 
             // panelOK
             // 
-            this.panelOK.BackColor = System.Drawing.Color.ForestGreen;
-            this.panelOK.Controls.Add(this.lblTime);
-            this.panelOK.Controls.Add(this.pictureBoxOK);
-            this.panelOK.Controls.Add(this.lblConfirme);
-            this.panelOK.Location = new System.Drawing.Point(-1, 64);
-            this.panelOK.Name = "panelOK";
-            this.panelOK.Size = new System.Drawing.Size(458, 413);
-            this.panelOK.TabIndex = 15;
+            panelOK.BackColor = Color.ForestGreen;
+            panelOK.Controls.Add(lblTime);
+            panelOK.Controls.Add(pictureBoxOK);
+            panelOK.Controls.Add(lblConfirme);
+            panelOK.Location = new Point(-1, 74);
+            panelOK.Margin = new Padding(4, 3, 4, 3);
+            panelOK.Name = "panelOK";
+            panelOK.Size = new Size(534, 477);
+            panelOK.TabIndex = 15;
+            panelOK.Paint += panelOK_Paint;
             // 
             // lblTime
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTime.Location = new System.Drawing.Point(405, 285);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(21, 24);
-            this.lblTime.TabIndex = 14;
-            this.lblTime.Text = "3";
+            lblTime.AutoSize = true;
+            lblTime.BackColor = Color.Transparent;
+            lblTime.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.DarkBlue;
+            lblTime.Location = new Point(472, 329);
+            lblTime.Margin = new Padding(4, 0, 4, 0);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(21, 24);
+            lblTime.TabIndex = 14;
+            lblTime.Text = "3";
             // 
             // pictureBoxOK
             // 
-            this.pictureBoxOK.Image = global::pagetest.Properties.Resources.confirmarOK;
-            this.pictureBoxOK.Location = new System.Drawing.Point(125, 45);
-            this.pictureBoxOK.Name = "pictureBoxOK";
-            this.pictureBoxOK.Size = new System.Drawing.Size(218, 194);
-            this.pictureBoxOK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxOK.TabIndex = 13;
-            this.pictureBoxOK.TabStop = false;
+            pictureBoxOK.Image = pagetest.Properties.Resources.confirmarOK;
+            pictureBoxOK.Location = new Point(146, 52);
+            pictureBoxOK.Margin = new Padding(4, 3, 4, 3);
+            pictureBoxOK.Name = "pictureBoxOK";
+            pictureBoxOK.Size = new Size(254, 224);
+            pictureBoxOK.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxOK.TabIndex = 13;
+            pictureBoxOK.TabStop = false;
             // 
             // lblConfirme
             // 
-            this.lblConfirme.AutoSize = true;
-            this.lblConfirme.BackColor = System.Drawing.Color.Transparent;
-            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirme.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblConfirme.Location = new System.Drawing.Point(25, 285);
-            this.lblConfirme.Name = "lblConfirme";
-            this.lblConfirme.Size = new System.Drawing.Size(374, 24);
-            this.lblConfirme.TabIndex = 12;
-            this.lblConfirme.Text = "SEGUINDO PARA O PRÓXIMO TESTE";
+            lblConfirme.AutoSize = true;
+            lblConfirme.BackColor = Color.Transparent;
+            lblConfirme.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirme.ForeColor = Color.DarkBlue;
+            lblConfirme.Location = new Point(29, 329);
+            lblConfirme.Margin = new Padding(4, 0, 4, 0);
+            lblConfirme.Name = "lblConfirme";
+            lblConfirme.Size = new Size(374, 24);
+            lblConfirme.TabIndex = 12;
+            lblConfirme.Text = "SEGUINDO PARA O PRÓXIMO TESTE";
             // 
-            // VALIDAOK
+            // VALIDARECFACEOK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 477);
-            this.Controls.Add(this.panelOK);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "VALIDAOK";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TESTE WEBCAM OK!";
-            this.panelOK.ResumeLayout(false);
-            this.panelOK.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOK)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(533, 550);
+            Controls.Add(panelOK);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "VALIDARECFACEOK";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "TESTE WEBCAM OK!";
+            panelOK.ResumeLayout(false);
+            panelOK.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxOK).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

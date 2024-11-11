@@ -383,7 +383,8 @@ namespace TESTE_MAQUINAS
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Falha ao criar log");
+                //#TODO
+                // MessageBox.Show("Falha ao criar log");
             }
         }
 
@@ -988,6 +989,11 @@ namespace TESTE_MAQUINAS
         private void lblAtualizacao_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pagetest.MainEthernet teste = new pagetest.MainEthernet();
         }
     }
 }

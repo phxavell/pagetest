@@ -28,7 +28,8 @@ namespace WEBCAM
             relogio.Interval = 1000;
             int tempo = 3;
 
-            relogio.Tick += delegate {
+            relogio.Tick += delegate
+            {
                 tempo -= 1;
                 lblTime.Text = tempo.ToString();
                 if (tempo == 0)
@@ -47,6 +48,11 @@ namespace WEBCAM
             //AVELLCUSTOM1.CUSTOM1 formAvellCustom = new AVELLCUSTOM1.CUSTOM1();
             //this.Hide();
             //formAvellCustom.ShowDialog();
+        }
+
+        private void panelOK_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

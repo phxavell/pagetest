@@ -30,79 +30,84 @@ namespace AVELLCUSTOM1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CUSTOM1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTempo = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lblFirebase = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pictureBox1 = new PictureBox();
+            lblTempo = new Label();
+            lblTime = new Label();
+            lblFirebase = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::pagetest.Properties.Resources.custom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 73);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 183);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = pagetest.Properties.Resources.custom;
+            pictureBox1.Location = new Point(14, 84);
+            pictureBox1.Margin = new Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(419, 211);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // lblTempo
             // 
-            this.lblTempo.AutoSize = true;
-            this.lblTempo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTempo.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTempo.Location = new System.Drawing.Point(12, 274);
-            this.lblTempo.Name = "lblTempo";
-            this.lblTempo.Size = new System.Drawing.Size(83, 24);
-            this.lblTempo.TabIndex = 14;
-            this.lblTempo.Text = "TESTE:";
+            lblTempo.AutoSize = true;
+            lblTempo.BackColor = Color.Transparent;
+            lblTempo.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTempo.ForeColor = Color.DarkBlue;
+            lblTempo.Location = new Point(14, 316);
+            lblTempo.Margin = new Padding(4, 0, 4, 0);
+            lblTempo.Name = "lblTempo";
+            lblTempo.Size = new Size(83, 24);
+            lblTempo.TabIndex = 14;
+            lblTempo.Text = "TESTE:";
             // 
             // lblTime
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTime.Location = new System.Drawing.Point(343, 274);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(16, 24);
-            this.lblTime.TabIndex = 16;
-            this.lblTime.Text = ".";
+            lblTime.AutoSize = true;
+            lblTime.BackColor = Color.Transparent;
+            lblTime.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.DarkBlue;
+            lblTime.Location = new Point(400, 316);
+            lblTime.Margin = new Padding(4, 0, 4, 0);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(16, 24);
+            lblTime.TabIndex = 16;
+            lblTime.Text = ".";
             // 
             // lblFirebase
             // 
-            this.lblFirebase.AutoSize = true;
-            this.lblFirebase.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirebase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirebase.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lblFirebase.Location = new System.Drawing.Point(12, 9);
-            this.lblFirebase.Name = "lblFirebase";
-            this.lblFirebase.Size = new System.Drawing.Size(14, 20);
-            this.lblFirebase.TabIndex = 39;
-            this.lblFirebase.Text = ".";
+            lblFirebase.AutoSize = true;
+            lblFirebase.BackColor = Color.Transparent;
+            lblFirebase.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblFirebase.ForeColor = Color.Gainsboro;
+            lblFirebase.Location = new Point(14, 10);
+            lblFirebase.Margin = new Padding(4, 0, 4, 0);
+            lblFirebase.Name = "lblFirebase";
+            lblFirebase.Size = new Size(14, 20);
+            lblFirebase.TabIndex = 39;
+            lblFirebase.Text = ".";
             // 
             // CUSTOM1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 326);
-            this.Controls.Add(this.lblFirebase);
-            this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.lblTempo);
-            this.Controls.Add(this.pictureBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CUSTOM1";
-            this.Opacity = 0.9D;
-            this.Text = "AVELL CUSTOM ";
-            this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(447, 376);
+            Controls.Add(lblFirebase);
+            Controls.Add(lblTime);
+            Controls.Add(lblTempo);
+            Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "CUSTOM1";
+            Opacity = 0.9D;
+            Text = "AVELL CUSTOM ";
+            TopMost = true;
+            Load += CUSTOM1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

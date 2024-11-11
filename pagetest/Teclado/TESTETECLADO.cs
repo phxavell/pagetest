@@ -22,7 +22,7 @@ namespace TECLADO
         public TESTETECLADO()
         {
             InitializeComponent();
-       //     StartFireBaseServices();
+            //     StartFireBaseServices();
             //Se arquivo de referencia não existir, cria.
             VerificaArquivoSistema();
             //InsertAvellWeb();
@@ -464,7 +464,7 @@ namespace TECLADO
                     }
                 }
                 readerStormBS.Close();
-                
+
                 //-----------------------------------------------------------------
 
 
@@ -729,7 +729,7 @@ namespace TECLADO
                     }
                 }
                 reader350.Close();
-				
+
                 // 450
                 //-----------------------------------------------------------------
                 string modelo450 = "450";
@@ -749,7 +749,7 @@ namespace TECLADO
                     }
                 }
                 reader450.Close();
-				
+
                 // 450r
                 //-----------------------------------------------------------------
                 string modelo450r = "450r";
@@ -769,7 +769,7 @@ namespace TECLADO
                     }
                 }
                 reader450r.Close();
-                
+
                 //-----------------------------------------------------------------
             }
             catch
@@ -958,6 +958,11 @@ namespace TECLADO
         }
 
         private void pictureBoxTeclado_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TESTETECLADO_Load(object sender, EventArgs e)
         {
 
         }

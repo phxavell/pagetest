@@ -30,81 +30,86 @@ namespace TECLADO
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TESTETECLADO));
-            this.lblConfirme = new System.Windows.Forms.Label();
-            this.pictureBoxTeclado = new System.Windows.Forms.PictureBox();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lblFirebase = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeclado)).BeginInit();
-            this.SuspendLayout();
+            lblConfirme = new Label();
+            pictureBoxTeclado = new PictureBox();
+            lblTime = new Label();
+            lblFirebase = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTeclado).BeginInit();
+            SuspendLayout();
             // 
             // lblConfirme
             // 
-            this.lblConfirme.AutoSize = true;
-            this.lblConfirme.BackColor = System.Drawing.Color.Transparent;
-            this.lblConfirme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirme.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblConfirme.Location = new System.Drawing.Point(22, 316);
-            this.lblConfirme.Name = "lblConfirme";
-            this.lblConfirme.Size = new System.Drawing.Size(257, 24);
-            this.lblConfirme.TabIndex = 11;
-            this.lblConfirme.Text = "INICIAR TESTE TECLADO";
-            this.lblConfirme.Click += new System.EventHandler(this.lblConfirme_Click);
+            lblConfirme.AutoSize = true;
+            lblConfirme.BackColor = Color.Transparent;
+            lblConfirme.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirme.ForeColor = Color.DarkBlue;
+            lblConfirme.Location = new Point(26, 365);
+            lblConfirme.Margin = new Padding(4, 0, 4, 0);
+            lblConfirme.Name = "lblConfirme";
+            lblConfirme.Size = new Size(257, 24);
+            lblConfirme.TabIndex = 11;
+            lblConfirme.Text = "INICIAR TESTE TECLADO";
+            lblConfirme.Click += lblConfirme_Click;
             // 
             // pictureBoxTeclado
             // 
-            this.pictureBoxTeclado.Image = global::pagetest.Properties.Resources.TecladoLight;
-            this.pictureBoxTeclado.Location = new System.Drawing.Point(12, 78);
-            this.pictureBoxTeclado.Name = "pictureBoxTeclado";
-            this.pictureBoxTeclado.Size = new System.Drawing.Size(436, 221);
-            this.pictureBoxTeclado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxTeclado.TabIndex = 7;
-            this.pictureBoxTeclado.TabStop = false;
-            this.pictureBoxTeclado.Click += new System.EventHandler(this.pictureBoxTeclado_Click);
+            pictureBoxTeclado.Image = pagetest.Properties.Resources.TecladoLight;
+            pictureBoxTeclado.Location = new Point(14, 90);
+            pictureBoxTeclado.Margin = new Padding(4, 3, 4, 3);
+            pictureBoxTeclado.Name = "pictureBoxTeclado";
+            pictureBoxTeclado.Size = new Size(509, 255);
+            pictureBoxTeclado.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxTeclado.TabIndex = 7;
+            pictureBoxTeclado.TabStop = false;
+            pictureBoxTeclado.Click += pictureBoxTeclado_Click;
             // 
             // lblTime
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTime.Location = new System.Drawing.Point(415, 316);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(21, 24);
-            this.lblTime.TabIndex = 13;
-            this.lblTime.Text = "3";
+            lblTime.AutoSize = true;
+            lblTime.BackColor = Color.Transparent;
+            lblTime.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.DarkBlue;
+            lblTime.Location = new Point(484, 365);
+            lblTime.Margin = new Padding(4, 0, 4, 0);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(21, 24);
+            lblTime.TabIndex = 13;
+            lblTime.Text = "3";
             // 
             // lblFirebase
             // 
-            this.lblFirebase.AutoSize = true;
-            this.lblFirebase.BackColor = System.Drawing.Color.Transparent;
-            this.lblFirebase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirebase.ForeColor = System.Drawing.Color.LimeGreen;
-            this.lblFirebase.Location = new System.Drawing.Point(206, 33);
-            this.lblFirebase.Name = "lblFirebase";
-            this.lblFirebase.Size = new System.Drawing.Size(13, 20);
-            this.lblFirebase.TabIndex = 14;
-            this.lblFirebase.Text = ".";
+            lblFirebase.AutoSize = true;
+            lblFirebase.BackColor = Color.Transparent;
+            lblFirebase.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFirebase.ForeColor = Color.LimeGreen;
+            lblFirebase.Location = new Point(240, 38);
+            lblFirebase.Margin = new Padding(4, 0, 4, 0);
+            lblFirebase.Name = "lblFirebase";
+            lblFirebase.Size = new Size(13, 20);
+            lblFirebase.TabIndex = 14;
+            lblFirebase.Text = ".";
             // 
             // TESTETECLADO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 360);
-            this.Controls.Add(this.lblFirebase);
-            this.Controls.Add(this.lblTime);
-            this.Controls.Add(this.lblConfirme);
-            this.Controls.Add(this.pictureBoxTeclado);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "TESTETECLADO";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TESTE DE TECLADOS";
-            this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeclado)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(537, 415);
+            Controls.Add(lblFirebase);
+            Controls.Add(lblTime);
+            Controls.Add(lblConfirme);
+            Controls.Add(pictureBoxTeclado);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "TESTETECLADO";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "TESTE DE TECLADOS";
+            TopMost = true;
+            Load += TESTETECLADO_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBoxTeclado).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

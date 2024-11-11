@@ -1,6 +1,10 @@
+using AVELLCUSTOM1;
 using pagetest;
 using pagetest.Memoria;
+using TECLADO;
 using TESTE_MAQUINAS;
+using USB;
+using WEBCAM;
 
 
 namespace pagetest

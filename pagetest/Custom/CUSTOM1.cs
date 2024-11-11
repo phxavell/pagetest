@@ -27,7 +27,7 @@ namespace AVELLCUSTOM1
         {
             InitializeComponent();
             //StartFireBaseServices();
-            
+
             ChamarProcesso();//Chamar probramaCustomControl
 
             VerificaArquivoSistema();
@@ -291,7 +291,7 @@ namespace AVELLCUSTOM1
                 //-----------------------------------------------------------------
                 //-----------------------------------------------------------------
                 //-----------------------------------------------------------------
-                
+
                 string modeloA52i = "A52i";
                 string filePathA52i = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
                 StreamReader readerA52i = new StreamReader(filePathA52i);
@@ -390,7 +390,7 @@ namespace AVELLCUSTOM1
                 }
                 reader450.Close();
                 //-----------------------------------------------------------------
-				//-----------------------------------------------------------------
+                //-----------------------------------------------------------------
 
                 string modelo450r = "450r";
                 string filePath450r = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
@@ -410,7 +410,7 @@ namespace AVELLCUSTOM1
                 }
                 reader450r.Close();
                 //-----------------------------------------------------------------
-				//-----------------------------------------------------------------
+                //-----------------------------------------------------------------
 
                 string modelo460 = "460";
                 string filePath460 = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
@@ -430,7 +430,7 @@ namespace AVELLCUSTOM1
                 }
                 reader460.Close();
                 //-----------------------------------------------------------------
-				//-----------------------------------------------------------------
+                //-----------------------------------------------------------------
 
                 string modelo470 = "470";
                 string filePath470 = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
@@ -450,7 +450,7 @@ namespace AVELLCUSTOM1
                 }
                 reader470.Close();
                 //-----------------------------------------------------------------
-				//-----------------------------------------------------------------
+                //-----------------------------------------------------------------
 
                 string modelo480 = "480";
                 string filePath480 = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
@@ -470,7 +470,7 @@ namespace AVELLCUSTOM1
                 }
                 reader480.Close();
                 //-----------------------------------------------------------------
-				//-----------------------------------------------------------------
+                //-----------------------------------------------------------------
 
                 string modelo490 = "490";
                 string filePath490 = @"C:\TESTES_AVELL\systemInfo\sistema.txt";
@@ -563,14 +563,15 @@ namespace AVELLCUSTOM1
                 }
                 readerA70i.Close();
                 //-----------------------------------------------------------------
-				
+
             }
             catch
             {
-                MessageBox.Show("Arquivo sistema.txt não encontrado em: C:\\TESTES_AVELL\\systemInfo", "ARQUIVO NÃO ENCONTRADO!");
+                    //#TODO
+                //  MessageBox.Show("Arquivo sistema.txt não encontrado em: C:\\TESTES_AVELL\\systemInfo", "ARQUIVO NÃO ENCONTRADO!");
             }
         }
-        
+
         public void ChamarB_ON()
         {
             //Ajustado aqui para não mais abrir
@@ -592,7 +593,7 @@ namespace AVELLCUSTOM1
             {
                 System.Windows.Forms.Timer relogio = new System.Windows.Forms.Timer();
                 relogio.Interval = 1000;
-                int tempo = 21;
+                int tempo = 10;
                 relogio.Tick += delegate
                 {
                     tempo -= 1;
@@ -627,7 +628,7 @@ namespace AVELLCUSTOM1
 
                 if (dt2.Date > dt1.Date)
                 {
-                    MessageBox.Show("DATA OEM CUSTOM OK!" + fileCreatedDate, "DATA OEM CUSTOM OK!");
+                  //  MessageBox.Show("DATA OEM CUSTOM OK!" + fileCreatedDate, "DATA OEM CUSTOM OK!");
 
                     CONFIRMACUSTOMOK = "OK";
                     CONFIRMACUSTOM formConfirmaCustom = new CONFIRMACUSTOM();
@@ -709,6 +710,11 @@ namespace AVELLCUSTOM1
                 lblFirebase.Text = "Firebase Off-Line";
                 lblFirebase.ForeColor = Color.Red;
             }
+        }
+
+        private void CUSTOM1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
