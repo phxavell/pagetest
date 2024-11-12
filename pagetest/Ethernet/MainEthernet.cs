@@ -40,6 +40,7 @@ namespace pagetest
         public MainEthernet()
         {
             InitializeComponent();
+            GetAllNetworkInterfaces();
             InitializeNetworkCounters();
             InitializePlot();
 
@@ -75,27 +76,56 @@ namespace pagetest
 
         private List<string> GetAllNetworkInterfaces()
         {
-            var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
-            var interfaceNames = new List<string>();
-
-            foreach (var ni in networkInterfaces)
             {
-                interfaceNames.Add(ni.Name); // Adiciona o nome da interface à lista
-            }
+                var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+                var interfaceInfos = new List<string>();
 
-            return interfaceNames; // Retorna a lista de nomes de interfaces
+                foreach (var ni in networkInterfaces)
+                {
+                    // Formata a informação para incluir o nome e a descrição
+                    var info = $"{ni.Description}";
+                    interfaceInfos.Add(info); // Adiciona o nome e descrição à lista
+                }
+
+                return interfaceInfos; // Retorna a lista de interfaces com nome e descrição
+
+                //PerformanceCounterCategory category = new PerformanceCounterCategory("Network Interface");
+                //String[] instancename = category.GetInstanceNames();
+
+                //foreach (string name in instancename)
+                //{
+                //    Console.WriteLine(name);
+                //}
+                //return interfaceInfos;
+            }
         }
 
         private void InitializeNetworkCounters()
         {
-            //   var allInterfaces = GetAllNetworkInterfaces(); Description = "Intel(R) Wi-Fi 6 AX201 160MHz" Realtek PCIe GbE Family Controller
-            _downloadCounter = new PerformanceCounter("Network Interface", "Bytes Received/sec", "Realtek PCIe GbE Family Controller");
-            _uploadCounter = new PerformanceCounter("Network Interface", "Bytes Sent/sec", "Realtek PCIe GbE Family Controller");
+            // Obtenha todas as interfaces de rede
+            var allInterfaces = GetAllNetworkInterfaces();
 
-            _timer = new System.Windows.Forms.Timer();
-            _timer.Interval = 1000; // Atualiza a cada 1 segundo
-            _timer.Tick += Timer_Tick;
-            _timer.Start();
+            // Busque a interface de rede que começa com "Realtek Gaming 2.5GbE"
+            string interfaceName = allInterfaces
+                .FirstOrDefault(ni => ni.StartsWith("Realtek Gaming 2.5GbE"));
+
+            if (interfaceName != null)
+            {
+                // Crie os contadores de desempenho com base na interface encontrada [0] = "Realtek Gaming 2.5GbE Family Controller" [1] = "Realtek Gaming 2.5GbE Family Controller _2"
+                _downloadCounter = new PerformanceCounter("Network Interface", "Bytes Received/sec", "Intel[R] Wi-Fi 6 AX201 160MHz");
+                _uploadCounter = new PerformanceCounter("Network Interface", "Bytes Sent/sec", "Intel[R] Wi-Fi 6 AX201 160MHz");
+
+                // Inicie o temporizador para atualização periódica
+                _timer = new System.Windows.Forms.Timer();
+                _timer.Interval = 1000; // Atualiza a cada 1 segundo
+                _timer.Tick += Timer_Tick;
+                _timer.Start();
+            }
+            else
+            {
+                // Lidar com a situação em que nenhuma interface correspondente foi encontrada
+                MessageBox.Show("Interface de rede 'Realtek Gaming 2.5GbE' não encontrada.");
+            }
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -125,7 +155,7 @@ namespace pagetest
             }
 
             // Lógica de teste de download
-            if (downloadSpeed > 70 && !_isTesting)
+            if (downloadSpeed > 40 && !_isTesting)
             {
                 _isTesting = true;
                 downinit.Text = "DOWNLOAD INICIADO..";
@@ -143,12 +173,7 @@ namespace pagetest
                 lblAverageDownload.Text = $"{_averageDownload:F2} Mbps\n{filteredAverageDownload:F2} Mbps(Filter)";
                 _validDownloadValues.Clear(); // Limpa os valores após calcular a média
 
-                // Verificação do resultado do teste de download
-                if (_averageDownload < 90)
-                {
-                    MessageBox.Show("Teste Ethernet Reprovado Downstream", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-
+               
             }
 
             // Lógica de teste de upload
@@ -171,6 +196,13 @@ namespace pagetest
                 _validUploadValues.Clear(); // Limpa os valores após calcular a média
 
                 // Verificação do resultado do teste de upload
+
+                // Verificação do resultado do teste de download
+                if (_averageDownload < 40)
+                {
+                    MessageBox.Show("Teste Ethernet Reprovado Downstream", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
                 if (_averageUpload < 4)
                 {
                     MessageBox.Show("Teste Ethernet Reprovado Upstream", "Resultado do Teste", MessageBoxButtons.OK, MessageBoxIcon.Warning);

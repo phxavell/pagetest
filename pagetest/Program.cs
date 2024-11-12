@@ -21,7 +21,7 @@ namespace pagetest
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //       Application.Run(new MainEthernet());
-            Application.Run(new Sistema_Teste());
+            Application.Run(new MainEthernet());
         }
     }
 }

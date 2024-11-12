@@ -558,7 +558,9 @@ namespace TESTE_MAQUINAS
                 //Sting para evitar loop!
                 BURNIN = "OK";
 
-                ROBOTESTE.ROBOTESTE projetoRoboTeste = new ROBOTESTE.ROBOTESTE();
+                pagetest.MainEthernet projetoRoboTeste = new pagetest.MainEthernet();
+
+            //    ROBOTESTE.ROBOTESTE projetoRoboTeste = new ROBOTESTE.ROBOTESTE();
                 projetoRoboTeste.Show();
                 MinimizarForm();
             }
